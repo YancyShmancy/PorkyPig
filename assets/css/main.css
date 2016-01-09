@@ -1,0 +1,128 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*****************
+Variables 
+*****************/
+/*****************
+Mixins
+*****************/
+/*****************
+Pages
+*****************/
+/*****************
+Universal Styles
+*****************/
+.full-width {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  float: left;
+  width: 75%;
+  /* 1170/1600 (entire body width/content width) */
+  height: auto;
+  margin: 0 15%;
+}
+
+.btn {
+  float: left;
+  width: auto;
+  height: 52px;
+  line-height: 52px;
+  background: #ffcd0f;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.section-header {
+  float: left;
+  width: 60%;
+  margin: 0 20%;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  text-align: center;
+}
+
+.section-header p {
+  width: 70%;
+  margin: 0 15%;
+}
+
+/******************
+Main Style
+******************/
+header, footer {
+  background: #f4614b;
+}
+
+header .cta-header {
+  float: left;
+  width: 60%;
+  /* 712/1170 rounded down*/
+  margin: 40px 0 0 11.111111111111%;
+  padding: 0 32px;
+  text-align: center;
+}
+
+.logo {
+  float: left;
+  width: 15%;
+  /* 165/1170 rounded up */
+  min-width: 165px;
+  height: 213px;
+  background: url(../img/porky_pig.png);
+  background-size: cover;
+  background-position: center;
+  margin: 40px 0 55px 0;
+}
+
+#navbar {
+  background-color: #202020;
+  height: 48px;
+}
+
+#navbar .nav {
+  float: left;
+  width: 83.760683760684%;
+  /* 980/1170 */
+  padding: 0;
+  margin: 0 8.119658119658%;
+  list-style-type: none;
+}
+
+#navbar .nav li {
+  float: left;
+  width: 14.489795918367%;
+  /* 142/980 */
+  text-align: center;
+}
+
+#navbar .nav li#logo {
+  width: 12.244897959184%;
+  /* 120/980 */
+}
+
+#navbar .nav li#logo img {
+  float: left;
+  width: 75%;
+  /* 90/120 */
+  margin: 0 12.5%;
+}
+
+#navbar .nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+}
